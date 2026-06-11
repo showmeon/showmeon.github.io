@@ -43,8 +43,6 @@ const I18N = {
     "edu2.degree": "计算机科学与技术学院 · 计算机科学与技术专业 · 本科",
 
     "footer.name": "夏鸣远",
-    "footer.credit":
-      '网站设计参考 <a href="https://jonbarron.info/" target="_blank" rel="noopener">Jon Barron</a> 的主页。',
   },
 
   en: {
@@ -90,8 +88,6 @@ const I18N = {
     "edu2.degree": "College of Computer Science and Technology · B.E. in Computer Science and Technology",
 
     "footer.name": "Mingyuan Xia",
-    "footer.credit":
-      'Website design inspired by <a href="https://jonbarron.info/" target="_blank" rel="noopener">Jon Barron</a>\'s homepage.',
   },
 };
 
