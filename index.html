@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="夏鸣远 Mingyuan Xia" />
+  <meta name="description" content="夏鸣远（Mingyuan Xia）的个人主页 — 时间序列预测、多模态文档理解、视频 Agent 与视频生成。" />
+  <title>夏鸣远 | Mingyuan Xia</title>
+  <link rel="icon" href="assets/img/avatar.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="page">
+
+    <div class="toolbar">
+      <button id="lang-toggle" class="icon-btn" type="button" aria-label="Switch language">EN</button>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Hero -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1 class="name" data-i18n="hero.name">夏鸣远 <span class="nickname">(showmeon)</span></h1>
+        <p data-i18n="hero.intro">
+          我即将进入<a href="https://www.ustc.edu.cn/" target="_blank" rel="noopener">中国科学技术大学</a>信息科学学院攻读硕士学位，本科毕业于<a href="https://www.jlu.edu.cn/" target="_blank" rel="noopener">吉林大学</a>计算机科学与技术学院。目前在形界智能实习，从事流式视频生成方向的研究。
+        </p>
+        <p class="hero-links">
+          <a href="mailto:xmydff@gmail.com" data-i18n="hero.email">邮箱</a> &nbsp;/&nbsp;
+          <a href="https://github.com/showmeon" target="_blank" rel="noopener">GitHub</a> &nbsp;/&nbsp;
+          <a href="https://scholar.google.com/citations?user=_sdt5CMAAAAJ" target="_blank" rel="noopener" data-i18n="hero.scholar">学术主页</a>
+        </p>
+      </div>
+      <div class="hero-photo">
+        <img class="avatar" src="assets/img/photo.jpg" alt="夏鸣远" />
+      </div>
+    </header>
+
+    <!-- Research interests -->
+    <section>
+      <h2 data-i18n="research.title">研究方向</h2>
+      <p data-i18n="research.desc">
+        我的研究兴趣包括时间序列预测（Time Series Forecasting）、多模态文档理解（Multimodal Document
+        Understanding）、视频 Agent 以及视频生成 / 数字人（Video Generation, Avatar）。
+      </p>
+    </section>
+
+    <!-- News -->
+    <section>
+      <h2 data-i18n="news.title">动态</h2>
+      <ul class="news-list">
+        <li>
+          <span class="news-date">2026.09</span>
+          <span data-i18n="news.item1">将进入中国科学技术大学信息科学学院攻读硕士学位。</span>
+        </li>
+        <li>
+          <span class="news-date">2026.06</span>
+          <span data-i18n="news.item2">加入形界智能，研究方向为流式视频生成。</span>
+        </li>
+        <li>
+          <span class="news-date">2026.02</span>
+          <span data-i18n="news.item3">加入元石创新科技担任算法实习生，方向为视频 Agent 与实时视频生成。</span>
+        </li>
+        <li>
+          <span class="news-date">2025.09</span>
+          <span data-i18n="news.item4">论文 TimeEmb 被 NeurIPS 2025 接收（Poster）。</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Publications -->
+    <section>
+      <h2 data-i18n="pub.title">论文</h2>
+      <div class="pub-row highlight">
+        <div class="pub-thumb">
+          <a href="assets/img/timeemb.png" target="_blank"><img src="assets/img/timeemb.png" alt="TimeEmb poster" /></a>
+        </div>
+        <div class="pub-info">
+          <a href="https://arxiv.org/abs/2510.00461" target="_blank" rel="noopener" class="papertitle">TimeEmb: A Lightweight Static-Dynamic Disentanglement Framework for Time Series Forecasting</a>
+          <br />
+          <strong>Mingyuan Xia</strong>*, Chunxu Zhang*, Zijian Zhang, Hao Miao, Qidong Liu, Yuanshao Zhu, Bo Yang
+          <br />
+          <em>NeurIPS</em>, 2025 &nbsp;<span class="pub-note">(Poster)</span>
+          <br />
+          <a href="https://arxiv.org/abs/2510.00461" target="_blank" rel="noopener">arXiv</a>
+          /
+          <a href="https://openreview.net/forum?id=sLfMvrkn6T" target="_blank" rel="noopener">OpenReview</a>
+          /
+          <a href="https://github.com/showmeon/TimeEmb" target="_blank" rel="noopener" data-i18n="pub1.code">代码</a>
+          <p class="pub-desc" data-i18n="pub1.desc">
+            针对时间序列预测中的分布偏移问题，提出静态-动态解耦范式：以时间步为索引的 embedding bank
+            存储数据集尺度的时不变信息，并使用频域滤波重塑时变分量的频谱。模型性能优于先进
+            baseline，且计算资源需求更低。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Internships -->
+    <section>
+      <h2 data-i18n="exp.title">实习经历</h2>
+      <ul class="row-list">
+        <li>
+          <span class="row-date" data-i18n="exp1.date">2026.06 – 至今</span>
+          <span>
+            <strong data-i18n="exp1.org">形界智能</strong> · <span data-i18n="exp1.role">算法实习生</span>
+            <br /><span class="soft" data-i18n="exp1.desc">流式视频生成</span>
+          </span>
+        </li>
+        <li>
+          <span class="row-date" data-i18n="exp2.date">2026.02 – 2026.05</span>
+          <span>
+            <strong data-i18n="exp2.org">元石创新科技</strong> · <span data-i18n="exp2.role">算法实习生</span>
+            <br /><span class="soft" data-i18n="exp2.desc">视频 Agent、实时视频生成</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Education -->
+    <section>
+      <h2 data-i18n="edu.title">教育经历</h2>
+      <ul class="row-list">
+        <li>
+          <span class="row-date" data-i18n="edu1.date">2026 – 2029</span>
+          <span>
+            <strong data-i18n="edu1.school">中国科学技术大学</strong>
+            <br /><span class="soft" data-i18n="edu1.degree">信息科学学院 · 硕士研究生</span>
+          </span>
+        </li>
+        <li>
+          <span class="row-date" data-i18n="edu2.date">2022.08 – 2026.06</span>
+          <span>
+            <strong data-i18n="edu2.school">吉林大学</strong>
+            <br /><span class="soft" data-i18n="edu2.degree">计算机科学与技术学院 · 计算机科学与技术专业 · 本科</span>
+          </span>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> <span data-i18n="footer.name">夏鸣远</span></p>
+      <p class="soft" data-i18n="footer.credit">
+        网站设计参考 <a href="https://jonbarron.info/" target="_blank" rel="noopener">Jon Barron</a> 的主页。
+      </p>
+    </footer>
+
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
